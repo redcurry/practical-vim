@@ -7,4 +7,7 @@
 | `I`          | Insert from the begining.
 | `;`          | Repeat last search used with the `f` or `F` commands.
 | `,`          | Reverse the last search used with the `f` or `F` commands.
-| `?<pattern>` | Search for <pattern> backwards.
+| `?<pattern>` | Search for `<pattern>` backwards.
+| `:%s/<word>/<replace>/g` | Replace `<word>` with `<replace>` in the whole document.
+| `:s/<word>/<replace>/g` | Replace `<word>` with `<replace>` for the selected lines in Visual mode.
+| `*` | Search for the current word under the cursor.
