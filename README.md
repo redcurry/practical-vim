@@ -1,6 +1,9 @@
 # Notes for Practical Vim, 2nd Edition
 
-| Command      | Description |
+The `Alt` command in the following table is a remapping
+of the original command for the Dvorak keyboard.
+
+| Command [Alt]      | Description |
 |--------------|-------------|
 | `s`          | Change the current letter to anything.
 | `S`          | Change from the beginning of the line to anything.
@@ -11,3 +14,10 @@
 | `:%s/<word>/<replace>/g` | Replace `<word>` with `<replace>` in the whole document.
 | `:s/<word>/<replace>/g` | Replace `<word>` with `<replace>` for the selected lines in Visual mode.
 | `*` | Search for the current word under the cursor.
+| `n` [`-`] | Search for the next match.
+| `N` [`_`] | Serach for the previous match.
+| `db` [`eb`] | Delete word backwards.
+| `daw` [`eaw`] | Delete "a word".
+| `Ctrl+a` | Add 1 to the current or next number under the cursor.
+| `Ctrl+x` | Subtract 1 from the current or next number under the cursor.
+| `W` | Move by words separated by spaces (not punctuation).
