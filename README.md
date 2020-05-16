@@ -21,8 +21,14 @@ of the original command for the Dvorak keyboard.
 | `Ctrl+a` | Add 1 to the current or next number under the cursor.
 | `Ctrl+x` | Subtract 1 from the current or next number under the cursor.
 | `W` | Move by words separated by spaces (not punctuation).
+| `g~`, `gU`, `gu` | Swap case, make uppercase, or make lowercase; followed by motion (e.g., `gUaw` to capitalize an entire word).
 
 When deleting many words, using `dw` and repeating with `.`
 is more granular than using a count with `dw`.
 This will make it easier to undo.
 But for replacing many words, using a count, like `c3w`, is probably better.
+
+Typically, when an operator is invoked in duplicate it applies to the current line.
+For example `gUgU` capitalizes the current line (`gUU` is a shortcut).
+
+Note: Use `https://github.com/tomtom/tcomment_vim` to add comment operation to vim.
