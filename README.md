@@ -21,3 +21,7 @@ of the original command for the Dvorak keyboard.
 | `Ctrl+a` | Add 1 to the current or next number under the cursor.
 | `Ctrl+x` | Subtract 1 from the current or next number under the cursor.
 | `W` | Move by words separated by spaces (not punctuation).
+
+When deleting many words, it's preferable to use one `dw` and repeat with `.` as needed,
+rather than use a count with `dw`.
+This is because a single `dw` has more granularity as is more flexible with undo and redo.
