@@ -22,6 +22,9 @@ of the original command for the Dvorak keyboard.
 | `Ctrl+x` | Subtract 1 from the current or next number under the cursor.
 | `W` | Move by words separated by spaces (not punctuation).
 | `g~`, `gU`, `gu` | Swap case, make uppercase, or make lowercase; followed by motion (e.g., `gUaw` to capitalize an entire word).
+| `Ctrl+w` | While in Insert mode, delete back one word.
+| `Ctrl+u` | While in Insert mode, delete back to the start of the line.
+| `Ctrl+o` | While in Insert mode, switch to Normal mode for one command, then back to Insert mode.
 
 When deleting many words, using `dw` and repeating with `.`
 is more granular than using a count with `dw`.
