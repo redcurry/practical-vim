@@ -25,7 +25,7 @@ of the original command for the Dvorak keyboard or Visual Studio.
 | `Ctrl+w` | While in Insert mode, delete back one word.
 | `Ctrl+u` | While in Insert mode, delete back to the start of the line.
 | `Ctrl+o` | While in Insert mode, switch to Normal mode for one command, then back to Insert mode.
-| `Ctrl+r`<register> [`Ctrl+y`] | While in Insert mode, paste from the given register.
+| `Ctrl+r<register>` [`Ctrl+y`] | While in Insert mode, paste from the given register.
 
 When deleting many words, using `dw` and repeating with `.`
 is more granular than using a count with `dw`.
