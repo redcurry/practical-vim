@@ -1,7 +1,7 @@
 # Notes for Practical Vim, 2nd Edition
 
 The `Alt` command in the following table is a remapping
-of the original command for the Dvorak keyboard.
+of the original command for the Dvorak keyboard or Visual Studio.
 
 | Command [Alt]      | Description |
 |--------------|-------------|
