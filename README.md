@@ -32,6 +32,8 @@ of the original command for the Dvorak keyboard or Visual Studio.
 | `ga` | Show a character's decimal, hex, and octal numerical code
 | `Ctrl+v<char>` | While in Insert mode, insert the `<char>` literally (e.g., tab)
 | `Ctrl+k<code>` | While in Insert mode, insert the character represented by the 2-digit digraph `<code>`
+| `R` | Replace mode (instead of Insert mode); use `gR` to treat single tab character as spaces
+| `Insert` | Toggle between Replace and Insert mode
 
 When deleting many words, using `dw` and repeating with `.`
 is more granular than using a count with `dw`.
