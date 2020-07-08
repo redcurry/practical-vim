@@ -27,6 +27,9 @@ of the original command for the Dvorak keyboard or Visual Studio.
 | `Ctrl+o` | While in Insert mode, switch to Normal mode for one command, then back to Insert mode.
 | `Ctrl+r<register>` [`Ctrl+y`] | While in Insert mode, paste from the given register.
 | `Ctrl+r, =` [`Ctrl+y, =`] | While in Insert mode, calculate expression after `=`
+| `Ctrl+v<code>` | While in Insert mode, insert the character by the 3-digit code `<code>`
+| `Ctrl+v, u<code>` | While in Insert mode, insert the Unicode character by the 4-digit code `<code>`
+| `ga` | Show a character's decimal, hex, and octal numerical code
 
 When deleting many words, using `dw` and repeating with `.`
 is more granular than using a count with `dw`.
