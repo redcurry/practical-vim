@@ -30,6 +30,8 @@ of the original command for the Dvorak keyboard or Visual Studio.
 | `Ctrl+v<code>` | While in Insert mode, insert the character by the 3-digit code `<code>`
 | `Ctrl+v, u<code>` | While in Insert mode, insert the Unicode character by the 4-digit code `<code>`
 | `ga` | Show a character's decimal, hex, and octal numerical code
+| `Ctrl+v<char>` | While in Insert mode, insert the `<char>` literally (e.g., tab)
+| `Ctrl+k<code>` | While in Insert mode, insert the character represented by the 2-digit digraph `<code>`
 
 When deleting many words, using `dw` and repeating with `.`
 is more granular than using a count with `dw`.
