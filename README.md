@@ -34,6 +34,9 @@ of the original command for the Dvorak keyboard or Visual Studio.
 | `Ctrl+k<code>` | While in Insert mode, insert the character represented by the 2-digit digraph `<code>`
 | `R` | Replace mode (instead of Insert mode); use `gR` to treat single tab character as spaces
 | `Insert` | Toggle between Replace and Insert mode
+| `v`, `V`, `<Ctrl+v>` | Character-wise, line-wise, or block-wise Visual mode
+| `gv` | Reselect last visual selection
+| `o` | In Visual mode, go to the other end of the selection
 
 When deleting many words, using `dw` and repeating with `.`
 is more granular than using a count with `dw`.
