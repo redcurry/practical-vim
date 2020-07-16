@@ -37,6 +37,8 @@ of the original command for the Dvorak keyboard or Visual Studio.
 | `v`, `V`, `<Ctrl+v>` | Character-wise, line-wise, or block-wise Visual mode
 | `gv` | Reselect last visual selection
 | `o` | In Visual mode, go to the other end of the selection
+| `vit` | Select text inside an HTML tag
+| `U` | In Visual mode, make selected text uppercase
 
 When deleting many words, using `dw` and repeating with `.`
 is more granular than using a count with `dw`.
@@ -45,5 +47,9 @@ But for replacing many words, using a count, like `c3w`, is probably better.
 
 Typically, when an operator is invoked in duplicate it applies to the current line.
 For example `gUgU` capitalizes the current line (`gUU` is a shortcut).
+
+When using the dot command in Visual mode, it repeats the command on the same range of text,
+which may not be desired when the text to act on is longer or shorter than the original.
+Instead, use an equivalent command in Normal mode.
 
 Note: Use `https://github.com/tomtom/tcomment_vim` to add comment operation to vim.
