@@ -52,4 +52,10 @@ When using the dot command in Visual mode, it repeats the command on the same ra
 which may not be desired when the text to act on is longer or shorter than the original.
 Instead, use an equivalent command in Normal mode.
 
+Replace every character in the selection (in any visual mode) with `r<char>`
+where `<char>` is the new character.
+
+In block-wise Visual mode, use `c` to change the topmost selected word and automatically
+change all selected words below.
+
 Note: Use `https://github.com/tomtom/tcomment_vim` to add comment operation to vim.
