@@ -58,4 +58,7 @@ where `<char>` is the new character.
 In block-wise Visual mode, use `c` to change the topmost selected word and automatically
 change all selected words below.
 
+Similarly, in block-wise Visual mode, use `A` to append to each line selected,
+even if the lines don't end in the same column.
+
 Note: Use `https://github.com/tomtom/tcomment_vim` to add comment operation to vim.
