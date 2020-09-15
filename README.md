@@ -61,4 +61,13 @@ change all selected words below.
 Similarly, in block-wise Visual mode, use `A` to append to each line selected,
 even if the lines don't end in the same column.
 
+In Command-Line mode, you can use many of the same commands as in Insert mode,
+such as `Ctrl+w` and `Ctrl+u`.
+
+## Ex Commands
+
+| Command [Alt]      | Description |
+|--------------|-------------|
+| `:[range]delete <x>`          | Delete specified lines into register `<x>`
+
 Note: Use `https://github.com/tomtom/tcomment_vim` to add comment operation to vim.
