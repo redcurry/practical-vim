@@ -72,6 +72,9 @@ such as `Ctrl+w` and `Ctrl+u`.
 | `:[range]copy <address>`         | `:t`     | Copy lines in `[range]` to `<address>` (e.g., `:t$` copies the current line to the end of the file).
 | `:[range]move <address>`         | `:m`     | Move lines in `[range]` to `<address>`.
 | `@:`                             |          | Repeat the last Ex command.
+| `:[range]normal <command>`       |          | Execute a vim command in normal mode on the range (e.g., `:%normal i//` comments all lines).
+| `Ctrl+D` and/or `<tab>`          |          | Show auto-completed commands.
+| `:Ctrl+r Ctrl+w`                 |          | Copy the word under the cursor to the Ex command-line.
 
 The `[range]` can be a single line number or a range in the form of `<start>,<end>`.
 
