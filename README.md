@@ -64,7 +64,7 @@ even if the lines don't end in the same column.
 In Command-Line mode, you can use many of the same commands as in Insert mode,
 such as `Ctrl+w` and `Ctrl+u`.
 
-## Ex Commands
+## Ex and Shell Commands
 
 | Command [Alt]                    | Shortcut | Description                  |
 |----------------------------------|----------|------------------------------|
@@ -72,9 +72,23 @@ such as `Ctrl+w` and `Ctrl+u`.
 | `:[range]copy <address>`         | `:t`     | Copy lines in `[range]` to `<address>` (e.g., `:t$` copies the current line to the end of the file).
 | `:[range]move <address>`         | `:m`     | Move lines in `[range]` to `<address>`.
 | `@:`                             |          | Repeat the last Ex command.
-| `:[range]normal <command>`       |          | Execute a vim command in normal mode on the range (e.g., `:%normal i//` comments all lines).
+| `:[range]normal <command>`       | `:norm`  | Execute a vim command in normal mode on the range (e.g., `:%normal i//` comments all lines).
 | `Ctrl+D` and/or `<tab>`          |          | Show auto-completed commands.
 | `:Ctrl+r Ctrl+w`                 |          | Copy the word under the cursor to the Ex command-line.
+| `q:`                             |          | Open Ex command-line history window.
+| `q/`                             |          | Open search history window.
+| `:!<cmd> %`                      |          | Run `<cmd>` on the shell, passing the current file (`%`).
+| `:read !<cmd>`                   | `:r`     | Send output of `<cmd>` to current file in vim.
+| `:write !<cmd>`                  | `:w`     | Send all lines from vim to `<cmd>` as standard input.
+| `:[range]write !<cmd>`           |          | Send lines in `[range]` to `<cmd>` as stdout.
+| `:write !sh`                     |          | Since `sh` executes commands, it executes every line from vim.
+| `[range]!<cmd>`                  |          | Send lines in `[range]` to stdin of `<cmd>`, and replace lines in `[range]` with output of `<cmd>`.
+| `!<motion>`                      |          | Automatically fills in the range represented by the motion.
+| `:source <file.vim>`             |          | Execute each Ex command from the script `<file.vim>`.
+| `:args`                          |          | Show all files (arguments) opened by vim (when run like `vim *.cs`).
+| `:first`                         |          | Go to the first file opened by vim.
+| `:next`                          |          | Go to the next file in the argument list.
+| `:argdo <cmd>`                   |          | Execute `<cmd>` on all files in the argument list (such as applying a script file).
 
 The `[range]` can be a single line number or a range in the form of `<start>,<end>`.
 
@@ -91,5 +105,8 @@ It may also be a mark, using `'<m>` where `<m>` is the mark.
 
 Add or subtract from `<start>` or `<end>`, e.g., `.,/void/+3` represents
 the lines starting at the current to the line containing `void` plus 3.
+
+In the command-line history window (opened by `q:` or `q/`), you can use vim commands
+to navigate and edit the history and execute edited commands by pressing Enter.
 
 Note: Use `https://github.com/tomtom/tcomment_vim` to add comment operation to vim.
