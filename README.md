@@ -110,3 +110,21 @@ In the command-line history window (opened by `q:` or `q/`), you can use vim com
 to navigate and edit the history and execute edited commands by pressing Enter.
 
 Note: Use `https://github.com/tomtom/tcomment_vim` to add comment operation to vim.
+
+## Working with Files
+
+| Command [Alt]                    | Shortcut | Description                  |
+|----------------------------------|----------|------------------------------|
+| `:ls`                            |          | List the buffers loaded by vim (when run like `vim *.txt`).
+| `:bnext`, `bprev`                |          | Switch to the next or previous buffer, respectively.
+| `:bfirst`, `blast`               |          | Switch to the first or last buffer, respectively.
+| `Ctrl+^` or `Ctrl+6`             |          | Switch to the alternate buffer.
+| `:buffer <n>`                    | `:b`     | Switch to the buffer `<n>`, which could be a number (listed by `:ls`) or name (file name).
+| `:bufdo`                         |          | Execute an Ex command to all buffers
+| `:bdelete <n1> <n2> ...`         | `:bd`    | Delete buffers `<n1>`, `<n2>`, and so on from memory (does not delete the files).
+| `:<n>,<m> bdelete`               |          | Delete buffers from `<n>` to `<m>`.
+
+In vim, a buffer is the contents of a file loaded into memory.
+
+In the list shown by the `:ls` command, the `%` symbol is the current buffer
+and the `#` symbol is the alternate file.
