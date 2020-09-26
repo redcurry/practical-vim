@@ -85,10 +85,6 @@ such as `Ctrl+w` and `Ctrl+u`.
 | `[range]!<cmd>`                  |          | Send lines in `[range]` to stdin of `<cmd>`, and replace lines in `[range]` with output of `<cmd>`.
 | `!<motion>`                      |          | Automatically fills in the range represented by the motion.
 | `:source <file.vim>`             |          | Execute each Ex command from the script `<file.vim>`.
-| `:args`                          |          | Show all files (arguments) opened by vim (when run like `vim *.cs`).
-| `:first`                         |          | Go to the first file opened by vim.
-| `:next`                          |          | Go to the next file in the argument list.
-| `:argdo <cmd>`                   |          | Execute `<cmd>` on all files in the argument list (such as applying a script file).
 
 The `[range]` can be a single line number or a range in the form of `<start>,<end>`.
 
@@ -123,6 +119,12 @@ Note: Use `https://github.com/tomtom/tcomment_vim` to add comment operation to v
 | `:bufdo`                         |          | Execute an Ex command to all buffers
 | `:bdelete <n1> <n2> ...`         | `:bd`    | Delete buffers `<n1>`, `<n2>`, and so on from memory (does not delete the files).
 | `:<n>,<m> bdelete`               |          | Delete buffers from `<n>` to `<m>`.
+| `:args`                          |          | Show all files (arguments) opened by vim (when run like `vim *.cs`).
+| `:first`                         |          | Go to the first file in the argument list.
+| `:next`                          |          | Go to the next file in the argument list.
+| `:prev`                          |          | Go to the previous file in the argument list.
+| `:argdo <cmd>`                   |          | Execute `<cmd>` on all files in the argument list (such as applying a script file).
+| `:args <file1> <file2> ...`      |          | Set the argument list to the given values, which may be wildcards (e.g., `*.txt`) or a shell command enclosed in backticks.
 
 In vim, a buffer is the contents of a file loaded into memory.
 
